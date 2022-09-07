@@ -6,7 +6,7 @@ const data = [
 		name: 'Palonchi 1',
 		userName: 'Palonchiyev',
 		age: 123,
-		desc: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum iste neque sed dignissimos suscipit reiciendis quam adipisci delectus ea itaque enim, quia aperiam vitae quasi optio, est quaerat molestiae. Ad sunt repellendus id. Deserunt, ullam distinctio pariatur nam corrupti ut!,
+		desc: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum iste neque sed dignissimos suscipit reiciendis quam adipisci delectus ea itaque enim, quia aperiam vitae quasi optio, est quaerat molestiae. Ad sunt repellendus id. Deserunt, ullam distinctio pariatur nam corrupti ut!',
 	},
 	{
 		id: 2,
