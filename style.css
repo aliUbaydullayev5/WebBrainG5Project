@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital@1&display=swap');
 
 * {
     margin: 0;
@@ -71,6 +72,29 @@ main {
     cursor: pointer;
 }
 
+.paramBlock {
+    width: 90%;
+    margin: auto;
+
+}
+
+.paramBlock>button {
+    margin: 20px 0;
+    padding: 5px 15px;
+    font-size: 20px;
+    border: 3px solid teal;
+    background-color: #fff;
+    cursor: pointer;
+    transition: .1s;
+}
+
+.paramBlock>button:active {
+    transform: scale(1.05);
+}
+
+.paramDesc {
+    font-family: 'Rubik', sans-serif;
+}
 
 @media screen and (max-width: 800px) {
     main {

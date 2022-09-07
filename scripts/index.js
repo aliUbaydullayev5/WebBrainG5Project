@@ -75,15 +75,20 @@ function renderBlocks(id) {
 }
 
 function paramInsetFunc(id) {
-	paramBlockInset.innerHTML = data.map(
-		(value) =>
-			value.id == id &&
-			`
+	paramBlockInset.innerHTML = data
+		.map(
+			(value) =>
+				value.id == id &&
+				`
 			<div>
-				<h1>${value.name}</h1>
+				<h1>Welcome <span style='border-bottom: 3px solid teal;'>${value.name} ${value.userName}</span></h1>
+				<br><br>
+				<p class='paramDesc'>${value.desc}<p>
 			</div>
 		`,
-	).filter(Boolean).join('')
+		)
+		.filter(Boolean)
+		.join('');
 }
 
 renderBlocks();
