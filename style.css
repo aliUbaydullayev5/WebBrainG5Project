@@ -100,9 +100,9 @@ main {
     line-height: 30px;
 }
 
-.link{
+.link {
     position: relative;
-    bottom: 10px;
+    bottom: 20px;
     right: -30px;
     /* left: 30px; */
 }
