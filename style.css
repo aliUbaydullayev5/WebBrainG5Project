@@ -66,10 +66,12 @@ main {
 
 .mainSelect {
     width: 90%;
-    height: 30px;
+    /* height: 30px; */
     border: 3px solid teal;
     margin: 20px auto;
     cursor: pointer;
+    font-size: 22px;
+    padding: 2px 10px;
 }
 
 .paramBlock {
