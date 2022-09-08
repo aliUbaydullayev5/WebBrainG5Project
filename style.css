@@ -126,6 +126,9 @@ main {
         border: 3px solid teal;
         margin: 40px auto;
     }
+    header{
+        padding: 0 15px;
+    }
 
     header>input {
         padding: 5px 10px;
