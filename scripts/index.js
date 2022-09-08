@@ -6,6 +6,7 @@ const data = [
 		name: 'Odinabonu',
 		userName: 'Saidnazarova',
 		age: 123,
+		key: 'Odinabonu',
 		desc: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum iste neque sed dignissimos suscipit reiciendis quam adipisci delectus ea itaque enim, quia aperiam vitae quasi optio, est quaerat molestiae. Ad sunt repellendus id. Deserunt, ullam distinctio pariatur nam corrupti ut!',
 	},
 	{
@@ -13,6 +14,7 @@ const data = [
 		name: 'Xusanov',
 		userName: '',
 		age: 123,
+		key: 'Xusanov',
 		desc: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum iste neque sed dignissimos suscipit reiciendis quam adipisci delectus ea itaque enim, quia aperiam vitae quasi optio, est quaerat molestiae. Ad sunt repellendus id. Deserunt, ullam distinctio pariatur nam corrupti ut!',
 	},
 	{
@@ -20,6 +22,7 @@ const data = [
 		name: 'Abdurahmon',
 		userName: 'Otajonov',
 		age: 123,
+		key: 'Abdurahmon',
 		desc: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum iste neque sed dignissimos suscipit reiciendis quam adipisci delectus ea itaque enim, quia aperiam vitae quasi optio, est quaerat molestiae. Ad sunt repellendus id. Deserunt, ullam distinctio pariatur nam corrupti ut!',
 	},
 	{
@@ -27,6 +30,7 @@ const data = [
 		name: ' Hojiakbar ',
 		userName: 'Murodillayev',
 		age: 123,
+		key: 'Hojiakbar ',
 		desc: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum iste neque sed dignissimos suscipit reiciendis quam adipisci delectus ea itaque enim, quia aperiam vitae quasi optio, est quaerat molestiae. Ad sunt repellendus id. Deserunt, ullam distinctio pariatur nam corrupti ut!',
 	},
 	{
@@ -34,6 +38,7 @@ const data = [
 		name: 'Maxsutaliyev',
 		userName: 'Abdulaziz',
 		age: 123,
+		key: 'Maxsutaliyev',
 		desc: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum iste neque sed dignissimos suscipit reiciendis quam adipisci delectus ea itaque enim, quia aperiam vitae quasi optio, est quaerat molestiae. Ad sunt repellendus id. Deserunt, ullam distinctio pariatur nam corrupti ut!',
 	},
 	{
@@ -41,6 +46,7 @@ const data = [
 		name: 'Azizbek',
 		userName: 'Tohirov',
 		age: 123,
+		key: 'Azizbek',
 		desc: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum iste neque sed dignissimos suscipit reiciendis quam adipisci delectus ea itaque enim, quia aperiam vitae quasi optio, est quaerat molestiae. Ad sunt repellendus id. Deserunt, ullam distinctio pariatur nam corrupti ut!',
 	},
 	{
@@ -48,6 +54,7 @@ const data = [
 		name: 'Sobirjon',
 		userName: 'Fayzullayev',
 		age: 123,
+		key: 'Sobirjon',
 		desc: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum iste neque sed dignissimos suscipit reiciendis quam adipisci delectus ea itaque enim, quia aperiam vitae quasi optio, est quaerat molestiae. Ad sunt repellendus id. Deserunt, ullam distinctio pariatur nam corrupti ut!',
 	},
 	{
@@ -55,6 +62,7 @@ const data = [
 		name: 'Asilbek',
 		userName: 'Sadullayev',
 		age: 123,
+		key: 'Asilbek',
 		desc: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum iste neque sed dignissimos suscipit reiciendis quam adipisci delectus ea itaque enim, quia aperiam vitae quasi optio, est quaerat molestiae. Ad sunt repellendus id. Deserunt, ullam distinctio pariatur nam corrupti ut!',
 	},
 	{
@@ -62,6 +70,7 @@ const data = [
 		name: 'Ruqiya',
 		userName: 'Zohidova',
 		age: 123,
+		key: 'Ruqiya',
 		desc: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum iste neque sed dignissimos suscipit reiciendis quam adipisci delectus ea itaque enim, quia aperiam vitae quasi optio, est quaerat molestiae. Ad sunt repellendus id. Deserunt, ullam distinctio pariatur nam corrupti ut!',
 	},
 	{
@@ -69,6 +78,7 @@ const data = [
 		name: 'Zuhriddin',
 		userName: 'Nuraliev',
 		age: 123,
+		key: 'Zuhriddin',
 		desc: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum iste neque sed dignissimos suscipit reiciendis quam adipisci delectus ea itaque enim, quia aperiam vitae quasi optio, est quaerat molestiae. Ad sunt repellendus id. Deserunt, ullam distinctio pariatur nam corrupti ut!',
 	},
 	{
@@ -76,6 +86,7 @@ const data = [
 		name: 'Sayfiddin',
 		userName: 'G`ofurov',
 		age: 123,
+		key: 'Sayfiddin',
 		desc: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum iste neque sed dignissimos suscipit reiciendis quam adipisci delectus ea itaque enim, quia aperiam vitae quasi optio, est quaerat molestiae. Ad sunt repellendus id. Deserunt, ullam distinctio pariatur nam corrupti ut!',
 	},
 ];
@@ -92,15 +103,13 @@ document
 	.addEventListener('click', () => renderBlocks());
 input.addEventListener('input', (e) => {
 	inputValue = e.target.value;
-	render();
 });
 function render() {
 	mapMain.innerHTML = data
 		.map(
 			(value) =>
-				value.name
-					.toLocaleLowerCase()
-					.includes(inputValue.toLocaleLowerCase()) &&
+				
+				value.key === inputValue &&
 				`
 		<div class="mainSelect" onclick="renderBlocks(${value.id})">${value.name}</div>
 	`,

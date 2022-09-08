@@ -34,6 +34,18 @@ header {
     gap: 15px;
     border-bottom: 3px solid teal;
 }
+header>button{
+    padding: 8px 15px;
+    font-size: 20px;
+    border-radius: 15px;
+    border: 3px solid teal;
+    cursor: pointer;
+    transition: .1s;
+}
+header>button:active{
+    transform: scale(1.05);
+}
+
 
 header>input {
     padding: 5px 10px;
